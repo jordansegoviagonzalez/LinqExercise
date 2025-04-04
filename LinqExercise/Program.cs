@@ -73,7 +73,7 @@ namespace LinqExercise
             //The string "Less than six:" acts as a heading for the numbers that follow 
             //Using the Console.WriteLine method that prints the specified text to the console.
             
-            var orderedNumbers = numbers.OrderBy(x => x);
+            var orderedNumbers = numbers.Where(x => x < 6).OrderBy(x => x);
             // 'var' is a keyword that lets the compiler automatically determine the variable's type based on the assigned value.
             //'orderdNumbers' is the variable that stores the sorted sequence of numbers.
             //'numbers' is the original array of numbers.
