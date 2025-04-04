@@ -134,7 +134,18 @@ namespace LinqExercise
 
             //TODO 12: Add an employee to the end of the list without using employees.Add()
             employees = employees.Append(new Employee("Seth", "Bowman", 30, yearsOfExperience: 5)).ToList();
-            //Append is a linked method that allows you to add something to the end of the sequence 
+            //Append is a linked method that allows you to add something to the end of the sequence
+            
+            //Bellow we have a loop, and it will loop though each employee in the 'employees' list,
+            
+
+            foreach (var empoyee in employees)
+                
+            {
+                Console.WriteLine(empoyee.FirstName);
+                //Console.WriteLine() method will invoke the output to the user. 
+                
+            }
             
 
 
